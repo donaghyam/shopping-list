@@ -7,7 +7,7 @@ const list = [
     {
         id: 2,
         item: "eggs",
-        price: 5
+        price: 9
     },
     {
         id: 3,
@@ -16,5 +16,8 @@ const list = [
     }
 ]
 
-console.log(list)
-
+for (const food of list) {
+    if (food.price > 8) {
+        console.log(food)
+    }
+}
